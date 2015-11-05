@@ -16,7 +16,7 @@ namespace CourierBottleAbuse {
 		}
 
 		private static void Game_OnWndProc(WndEventArgs args) {
-			if (args.WParam == 'Z' && !Game.IsChatOpen && args.Msg == (uint) Utils.WindowsMessages.WM_KEYUP) {
+			if (args.WParam == 'P' && !Game.IsChatOpen && args.Msg == (uint) Utils.WindowsMessages.WM_KEYUP) {
 				_enabled = true;
 				_following = false;
 			}
